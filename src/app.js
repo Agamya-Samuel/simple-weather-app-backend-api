@@ -22,3 +22,6 @@ app.use('/', weatherRouter);
 app.listen(PORT, () => {
 	console.log(`Server Started on PORT: ${PORT}`);
 });
+
+// exporting app: for Vercel deployment
+module.exports = app;
