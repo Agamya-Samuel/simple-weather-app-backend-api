@@ -1,10 +1,10 @@
 {
   "name": "simple-weather-app-backend-api",
   "version": "1.0.0",
-  "description": "Backend API for SimpleWeatherApp 🌦️  A lightweight, user-friendly weather app.",
+  "description": "Backend API for SimpleWeatherApp 🌦️  A lightweight, user-friendly weather app backend API",
   "main": "./src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,8 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
