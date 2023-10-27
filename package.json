@@ -1,0 +1,12 @@
+{
+  "name": "simple-weather-app-backend-api",
+  "version": "1.0.0",
+  "description": "Backend API for SimpleWeatherApp 🌦️  A lightweight, user-friendly weather app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
