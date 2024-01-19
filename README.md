@@ -41,10 +41,10 @@ cd weather-backend-api
 npm install
 ```
 
-4. Start the server:
+4. Start the server (testing environment):
 
 ```bash
-npm start
+npm run devStart
 ```
 
 The server will be running at http://localhost:PORT, where PORT is the port number you have configured.
