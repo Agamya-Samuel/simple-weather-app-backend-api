@@ -30,5 +30,9 @@ router.get('/:city', async (req, res) => {
 	}
 });
 
+router.all('*', (req, res) => {
+	res.status(404).json('Route not found. Please check your request, and try again.');
+});
+
 // exporting router
 module.exports = router;
