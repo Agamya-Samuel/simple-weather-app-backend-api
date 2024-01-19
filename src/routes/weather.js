@@ -17,7 +17,7 @@ async function getWeatherData(city) {
 	return weatherData;
 }
 
-// GET /weather/:id
+// GET /:id
 router.get('/:id', async (req, res) => {
 	const city = req.params.id;
 	try {
