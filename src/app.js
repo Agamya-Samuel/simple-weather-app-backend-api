@@ -32,10 +32,10 @@ app.use(
 // make sever accept payload in json format, using middleware
 app.use(express.json());
 
-// weatherRouter, to route all incoming requests coming to / endpoint ==> weatherRouter
+// importing weatherRouter, to route all incoming requests coming to "/" endpoint ==> weatherRouter
 const weatherRouter = require('./routes/weather');
 
-// use weatherRouter for all incoming requests to / endpoint
+// send all incoming requests to "/" endpoint to ==> weatherRouter
 app.use('/', weatherRouter);
 
 // make express app to listen on PORT for incoming requests
