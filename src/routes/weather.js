@@ -17,12 +17,12 @@ async function getWeatherData(city) {
 	return weatherData;
 }
 
-// GET /:id
-router.get('/:id', async (req, res) => {
-	const city = req.params.id;
+// GET /:city
+router.get('/:city', async (req, res) => {
+	const cityName = req.params.city;
 	try {
-		console.log(`Fetching weather data for: ${city} city`);
-		const weatherData = await getWeatherData(city);
+		console.log(`Fetching weather data for: ${cityName} city`);
+		const weatherData = await getWeatherData(cityName);
 		// console.log(weatherData)
 		res.status(200).json(weatherData);
 	} catch (err) {
